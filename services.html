@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - B &amp; J Automotive</title>
-  <meta name="description" content="Full-service auto repair including brakes, transmissions, engines, AC, tune-ups, and more at B &amp; J Automotive in Campbell, CA.">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - B&J Automotive Inc</title>
+    <meta name="description" content="B&J Automotive services: brakes, tune-ups, transmission, engine repair, A/C, electrical, performance, towing, and more in Campbell, CA.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="B &amp; J Automotive">
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="B&J Automotive Inc">
+        </a>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" class="cta-btn">Schedule a Repair</a>
+        </nav>
+    </header>
 
-  <section class="hero" style="min-height: 200px; padding: 3rem 2rem;">
-    <h1>Our Services</h1>
-  </section>
+    <section class="page-banner" style="background-image: url('images/services-bg.jpg');">
+        <h1>Our Services</h1>
+    </section>
 
-  <section class="section">
-    <h2>What We Offer</h2>
-    <ul class="services-list">
-      <li>Most Extended Warranties Welcome</li>
-      <li>30, 60, &amp; 90k Service</li>
-      <li>Brake Systems</li>
-      <li>Tune-Up Service</li>
-      <li>Clutches</li>
-      <li>Shocks</li>
-      <li>Struts</li>
-      <li>Transmission Repair / Service / Replacement</li>
-      <li>Engines Repaired / Rebuilt</li>
-      <li>Electrical</li>
-      <li>Performance</li>
-      <li>Towing</li>
-      <li>Air Conditioning Service</li>
-    </ul>
-  </section>
+    <div class="section">
+        <p>B&J Automotive provides complete auto repair and maintenance for all makes and models - American, Japanese, and European.</p>
 
-  <footer>
-    <p>All Rights Reserved | B&amp;J Automotive &copy; 2026</p>
-  </footer>
+        <div class="services-grid">
+            <div class="service-item">Extended Warranties (Most Accepted)</div>
+            <div class="service-item">30, 60, &amp; 90K Service</div>
+            <div class="service-item">Brake Systems</div>
+            <div class="service-item">Tune-Up Service</div>
+            <div class="service-item">Clutches</div>
+            <div class="service-item">Shocks</div>
+            <div class="service-item">Struts</div>
+            <div class="service-item">Transmission Repair / Service / Replacement</div>
+            <div class="service-item">Engines Repaired / Rebuilt</div>
+            <div class="service-item">Electrical Work</div>
+            <div class="service-item">Performance Services</div>
+            <div class="service-item">Towing</div>
+            <div class="service-item">Air Conditioning Service</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 B&J Automotive Inc. - 921 Camden Ave, Campbell, CA 95008 - <a href="tel:4083795604">(408) 379-5604</a></p>
+    </footer>
 
 </body>
 </html>

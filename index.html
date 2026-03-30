@@ -1,65 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B &amp; J Automotive - Service You Can Trust Since 1985</title>
-  <meta name="description" content="B &amp; J Automotive in Campbell, CA. Full-service auto repair for American, Japanese, and European vehicles since 1985.">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "B & J Automotive",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "921 Camden Ave",
-      "addressLocality": "Campbell",
-      "addressRegion": "CA",
-      "postalCode": "95008"
-    },
-    "telephone": "408-379-5604",
-    "email": "mfwat101@aol.com",
-    "url": "https://www.bandjautoinc.com",
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:30" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "14:00" }
-    ],
-    "foundingDate": "1985"
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&J Automotive Inc - Service You Can Trust Since 1985</title>
+    <meta name="description" content="B&J Automotive in Campbell, CA offers prompt turnaround on all car and truck repairs. American, Japanese, and European vehicles. Call (408) 379-5604.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="B &amp; J Automotive">
-    </a>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="B&J Automotive Inc">
+        </a>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" class="cta-btn">Schedule a Repair</a>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h1>Service You Can Trust Since 1985</h1>
-    <a href="contact.html" class="btn">Schedule a Repair</a>
-  </section>
+    <section class="hero" style="background-image: url('images/hero.jpg'); margin-top: 80px;">
+        <div class="hero-content">
+            <h1>Service you can trust since 1985</h1>
+            <p>At B&J Automotive, we offer prompt turnaround times. We also service all types of cars and trucks. Whether American, Japanese, or European, we have you covered! Call or come in today for all your automotive needs!</p>
+            <a href="contact.html" class="btn">Schedule a Repair</a>
+        </div>
+    </section>
 
-  <section class="testimonial">
-    <blockquote>"Consumer Checkbook Quality Rating"</blockquote>
-  </section>
+    <div class="section">
+        <h2>Quality You Can Count On</h2>
+        <p>B&J Automotive has been serving the Campbell and greater San Jose area for nearly four decades. We are proud of our Consumer Checkbook Quality Rating and stand behind every job we do.</p>
+        <a href="services.html" class="btn">View Our Services</a>
+    </div>
 
-  <section class="section">
-    <h2>Welcome to B &amp; J Automotive</h2>
-    <p>At B&amp;J Automotive, we offer prompt turnaround times. We also service all types of cars and trucks. Whether American, Japanese, or European, we have you covered! Call or come in today for all your automotive needs!</p>
-    <a href="services.html" class="btn">View Our Services</a>
-  </section>
-
-  <footer>
-    <p>All Rights Reserved | B&amp;J Automotive &copy; 2026</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 B&J Automotive Inc. - 921 Camden Ave, Campbell, CA 95008 - <a href="tel:4083795604">(408) 379-5604</a></p>
+    </footer>
 
 </body>
 </html>

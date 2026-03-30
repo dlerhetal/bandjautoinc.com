@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - B &amp; J Automotive</title>
-  <meta name="description" content="Contact B &amp; J Automotive at 921 Camden Ave, Campbell, CA 95008. Call 408-379-5604 or visit us Monday through Saturday.">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - B&J Automotive Inc</title>
+    <meta name="description" content="Contact B&J Automotive at 921 Camden Ave, Campbell, CA 95008. Call (408) 379-5604. Mon-Fri 8-5:30, Sat 8:30-2.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="B &amp; J Automotive">
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active">Contact Us</a>
-    </nav>
-  </header>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="B&J Automotive Inc">
+        </a>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact Us</a>
+            <a href="contact.html" class="cta-btn">Schedule a Repair</a>
+        </nav>
+    </header>
 
-  <section class="hero" style="min-height: 200px; padding: 3rem 2rem;">
-    <h1>Contact Us</h1>
-  </section>
+    <section class="page-banner" style="background-image: url('images/contact-bg.jpg');">
+        <h1>Contact Us</h1>
+    </section>
 
-  <div class="contact-grid">
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Visit Us</h2>
+            <p><strong>Address:</strong> 921 Camden Ave, Campbell, CA 95008</p>
+            <p><strong>Phone:</strong> <a href="tel:4083795604">(408) 379-5604</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mfwat101@aol.com">mfwat101@aol.com</a></p>
 
-    <div class="contact-info">
-      <h3>Location &amp; Hours</h3>
-      <p><strong>921 Camden Ave</strong><br>Campbell, CA 95008</p>
-      <p>Phone: <a href="tel:408-379-5604">408-379-5604</a></p>
-      <p>Email: <a href="mailto:mfwat101@aol.com">mfwat101@aol.com</a></p>
+            <table class="hours-table">
+                <tr><td>Monday</td><td>8:00 AM - 5:30 PM</td></tr>
+                <tr><td>Tuesday</td><td>8:00 AM - 5:30 PM</td></tr>
+                <tr><td>Wednesday</td><td>8:00 AM - 5:30 PM</td></tr>
+                <tr><td>Thursday</td><td>8:00 AM - 5:30 PM</td></tr>
+                <tr><td>Friday</td><td>8:00 AM - 5:30 PM</td></tr>
+                <tr><td>Saturday</td><td>8:30 AM - 2:00 PM</td></tr>
+                <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
 
-      <table class="hours-table">
-        <tr><td>Monday - Friday</td><td>8:00 AM - 5:30 PM</td></tr>
-        <tr><td>Saturday</td><td>8:30 AM - 2:00 PM</td></tr>
-        <tr><td>Sunday</td><td>Closed</td></tr>
-      </table>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.5!2d-121.9516773!3d37.273734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcb5b0e24f9c7%3A0x9e8c0c6b2e8c0c6b!2s921%20Camden%20Ave%2C%20Campbell%2C%20CA%2095008!5e0!3m2!1sen!1sus!4v1"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
 
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.8!2d-121.947!3d37.287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae1a5e4b3c7%3A0x0!2s921+Camden+Ave%2C+Campbell%2C+CA+95008!5e0!3m2!1sen!2sus!4v1"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="B &amp; J Automotive Location">
-        </iframe>
-      </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </div>
 
-    <div class="contact-form">
-      <h3>Send Us a Message</h3>
-      <form id="contactForm" onsubmit="return handleSubmit(event)">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+    <footer>
+        <p>&copy; 2026 B&J Automotive Inc. - 921 Camden Ave, Campbell, CA 95008 - <a href="tel:4083795604">(408) 379-5604</a></p>
+    </footer>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone">
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit" class="btn">Send Message</button>
-        <div id="formStatus" class="form-status"></div>
-      </form>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>All Rights Reserved | B&amp;J Automotive &copy; 2026</p>
-  </footer>
-
-  <script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    var status = document.getElementById('formStatus');
-    var form = document.getElementById('contactForm');
-    var data = new FormData(form);
-
-    // mailto fallback since this is static hosting
-    var subject = encodeURIComponent('Website Contact from ' + data.get('name'));
-    var body = encodeURIComponent(
-      'Name: ' + data.get('name') + '\n' +
-      'Email: ' + data.get('email') + '\n' +
-      'Phone: ' + (data.get('phone') || 'Not provided') + '\n\n' +
-      data.get('message')
-    );
-    window.location.href = 'mailto:mfwat101@aol.com?subject=' + subject + '&body=' + body;
-
-    status.className = 'form-status success';
-    status.textContent = 'Opening your email client. If it does not open, please email us directly at mfwat101@aol.com';
-    return false;
-  }
-  </script>
+    <script>
+    function handleSubmit(e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+        var subject = encodeURIComponent('Website Inquiry from ' + name);
+        var body = encodeURIComponent(
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Phone: ' + (phone || 'Not provided') + '\n\n' +
+            message
+        );
+        window.location.href = 'mailto:mfwat101@aol.com?subject=' + subject + '&body=' + body;
+        alert('Thank you! Your default email client will open to send the message.');
+    }
+    </script>
 
 </body>
 </html>
